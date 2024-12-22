@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main-section {
+  min-height: 100vh;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  border: 1px solid red;
+  gap: 1rem;
+  height: 80vh;
+  width: 80%;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0px 0px 5px 0px gray;
+  border-radius: 1rem;
+  padding: 1rem;
+  min-width: 35%;
+  color: #fff;
+
+  position: relative;
+}
+
+.main-title {
+  margin-bottom: 1rem;
+}
+
+.balance-card {
+  background: linear-gradient(
+    to right,
+    rgb(63, 194, 226),
+    rgb(110, 53, 218),
+    rgb(158, 47, 194),
+    rgb(83, 77, 179)
+  );
+  border-radius: 1rem;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  z-index: 3;
+}
+
+.balance-card .expiry-details {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.card-section {
+  background-color: rgb(6, 3, 22);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+small {
+  color: rgb(195, 195, 195);
+}
+
+.expiry-details img {
+  width: 80px;
+  height: 25px;
+}
+
+.add-button-section {
+  background-color: #000;
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.add-button-section box-icon {
+  transform: rotate(45deg);
+}
+
+.transaction {
+  padding-top: 17rem;
+  color: #000;
+}
+
+.menu {
+  display: flex;
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 0px 5px 0px rgb(213, 213, 213);
+
+  align-items: center;
+  padding: 0.3rem;
+
+  border-radius: 5px;
+}
+
+.menu img {
+  width: 30px;
+  height: 30px;
+
+  margin-right: 0.5rem;
+}
+
+.transaction h4.title {
+  margin-bottom: 0.5rem;
+}
+
+.menu .stats {
+  margin-left: auto;
+  color: red;
+  height: 0.5rem;
+}
